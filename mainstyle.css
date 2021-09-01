@@ -53,6 +53,7 @@ select {
     font-size: medium;
     font-weight: 1;
 	padding: 15px 15px; 
+	color: black;
 }
 
 #submit:hover {
