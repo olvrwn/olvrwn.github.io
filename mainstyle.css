@@ -10,9 +10,15 @@ p {
   color: black;
 }
 
-input[type=text] {
+input[type=text], input[type=submit], textarea {
   border: 2px;
   border-radius: 4px;
+  border:1px solid black;
+  background: transparent;
+  padding: 5px 5px; 
+  line-height: 20px;
+  width: 500px;
+  color: #000;
 }
 
 #contactme
@@ -31,3 +37,19 @@ form {
 	margin: 0 auto; 
 	width:250px;
 }
+
+select {
+    border: 1px solid #000000;
+    background-color: transparent;
+	width: 500px;
+}
+
+#submit:hover {
+	background-color: black;
+	opacity: 0.2;
+}
+
+::placeholder {
+	color: #000;
+}
+
