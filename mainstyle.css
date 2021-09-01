@@ -14,11 +14,13 @@ input[type=text], input[type=submit], textarea {
   border-radius: 10px;
   border: 0.5px solid black;
   background: transparent;
-  padding: 5px 5px; 
+  padding: 15px 15px; 
   line-height: 20px;
   width: 750px;
   color: #000;
   -webkit-box-sizing: content-box;
+  font-size: medium;
+  font-weight: 1;
 }
 
 input[type=text]:focus, textarea:focus, select {
@@ -43,9 +45,14 @@ form {
 }
 
 select {
+	-webkit-appearance: none;
     border: 0.5px solid black;
+	border-radius: 10px;
     background-color: transparent;
-	width: 760px;
+	width: 780px;
+    font-size: medium;
+    font-weight: 1;
+	padding: 15px 15px; 
 }
 
 #submit:hover {
