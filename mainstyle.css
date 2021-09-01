@@ -26,3 +26,8 @@ input[type=text] {
 #contactme input{
     display:block;
 }
+
+form {
+	margin: 0 auto; 
+	width:250px;
+}
