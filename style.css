@@ -1,0 +1,108 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+input[type=text], input[type=submit], textarea {
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background: transparent;
+  padding: 15px 15px; 
+  line-height: 20px;
+  width: 750px;
+  color: #000;
+  -webkit-box-sizing: content-box;
+  font-size: medium;
+  font-weight: 1;
+}
+
+input[type=text]:focus, textarea:focus, select {
+	outline: 0px solid black;
+}
+
+#contactme
+{
+    height:100%;
+    flex: 1 1 auto;
+    margin:0 auto;
+    display:block;
+}
+
+#contactme input{
+    display:block;
+}
+
+form {
+	margin: 0 auto; 
+	width:750px;
+}
+
+select {
+	-webkit-appearance: none;
+    border: 0.5px solid black;
+	border-radius: 10px;
+    background-color: transparent;
+	width: 780px;
+    font-size: medium;
+    font-weight: 1;
+	padding: 15px 15px; 
+	color: black;
+}
+
+#submit:hover {
+	background-color: transparent;
+	opacity: 0.5;
+	color: black;
+}
+
+::placeholder {
+	color: #000;
+}
+
+#email-icon {
+	width: 25.6px;
+	height: 18.6px;
+}
+
+#mailto:link, #mailto:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#mailto:hover, #mailto:active {
+	color: black;
+	opacity: 0.5;
+	text-decoration: none;
+}
+  
+#menulink {
+	font-family: Arial, Helvetica, sans-serif; /* change font later, maybe urbanist (from google)*/
+	transition: 0.35s;
+	margin: 2%;
+}
+
+#menulink:link, #menulink:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#menulink:hover, #menulink:active {
+	color: rgb(58, 62, 66);
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+#space800 {
+	height: 800px;
+}
+
+
+
+
