@@ -1,30 +1,39 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  background-color: white;
+  background-color: rgb(29, 31, 33);
 }
 
 h1 {
   color: black;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
   color: black;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type=text], input[type=submit], textarea {
   border-radius: 10px;
-  border: 0.5px solid black;
+  border: 1px solid black;
   background: transparent;
   padding: 15px 15px; 
-  line-height: 20px;
-  width: 750px;
+  line-height: 60px;
+  width: 90%;
   color: #000;
   -webkit-box-sizing: content-box;
-  font-size: medium;
+  font-size: xx-large;
   font-weight: 1;
 }
 
 input[type=text]:focus, textarea:focus, select {
 	outline: 0px solid black;
+	/*color: white;*/
 }
 
 #contactme
@@ -46,14 +55,15 @@ form {
 
 select {
 	-webkit-appearance: none;
-    border: 0.5px solid black;
+    border: 1px solid black;
 	border-radius: 10px;
     background-color: transparent;
-	width: 780px;
-    font-size: medium;
+	width: 94%;
+    font-size: xx-large;
     font-weight: 1;
 	padding: 15px 15px; 
 	color: black;
+	line-height: 60px;
 }
 
 #submit:hover {
@@ -67,25 +77,32 @@ select {
 }
 
 #email-icon {
-	width: 25.6px;
-	height: 18.6px;
+	width: 76.8px;
+	height: 55.8px;
+	padding: 2%;
+}
+#instagram-icon {
+	width: 58px;
+	height: 58px;
+	padding: 2%;
 }
 
-#mailto:link, #mailto:visited {
+#mailto:link, #mailto:visited, #instagram:link, #instagram:visited{
 	color: black;
 	text-decoration: none;
 }
 
-#mailto:hover, #mailto:active {
+#mailto:hover, #mailto:active, #instagram:hover, #instagram:active {
 	color: black;
 	opacity: 0.5;
 	text-decoration: none;
 }
-  
+
 #menulink {
 	font-family: Arial, Helvetica, sans-serif; /* change font later, maybe urbanist (from google)*/
 	transition: 0.35s;
 	margin: 2%;
+	font-size: 24;
 }
 
 #menulink:link, #menulink:visited {
@@ -99,10 +116,176 @@ select {
 	text-decoration: none;
 }
 
-#space800 {
-	height: 800px;
+hr {
+	border-top: black;
+}
+
+img {
+  border-radius: 25%;
+}
+
+#footer {
+	background-color: black;
+}
+
+#info-div {
+	align-content: center;
+	height: 100vh;
+}
+
+/* object of this class will be centered vertically and horizontically */
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.menu {
+	display: none;
+}
+
+.img-info p {
+	padding: 20px 30px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	line.height: 32px;
+	text-align: justify;
+}
+
+.img {
+	width: 40%;
+	padding: 2%;
+}
+
+#support {
+	background-color: #777;
+}
+
+/* all the seperator stuff*/
+.seperator {
+	height: 20vh;
+}
+
+.seperator2 {
+	height: 8vh;
+}
+
+#aboutMe2projects {
+	background-color: rgb(29, 31, 33);
+}
+
+#projects2support {
+	background-color: rgb(29, 31, 33);
+}
+
+#support2footer {
+	background-color: #777;
+}
+
+#spaceDark {
+	background-color: rgb(29, 31, 33);
+}
+
+#spaceLight {
+	background-color: #777;
+}
+
+
+
+
+
+/* it is only noted when display size at least 768px */
+@media only screen and (min-width: 1000px) {
+	/* show menu bar at the top*/
+	.menu {
+		display: block;
+	}
+	
+	.wrapper {
+
+		margin: 0 auto;
+	}
+	
+	.img-info {
+		width: 75%;
+		/*float: right;*/
+	}
+	
+	.img-info p {
+		padding: 20px 0px 0px 40px;
+	}
+	
+	.img {
+		/*padding: 20px 0px 0px 0px;*/
+		width: 18%;
+		padding: 5vh;
+		float: center;
+	}
+	
+	#footer {
+		display: none;
+	}
+	
+	#projects {
+		clear: right;
+		clear: left;
+	}
+	
+	#support {
+		clear: right;
+		clear: left;
+	}
+	
+	img:hover {
+		transform: scale(1.1);
+		transition: transform .25s ease;
+	}
+	
+	img {
+		transition: transform .25s ease;
+	}
+	
+	input[type=text], input[type=submit], textarea {
+	  line-height: 20px;
+	  width: 96%;
+	  font-size: x-large;
+	}
+	
+	select {
+		width: 100%;
+	    font-size: x-large;
+		line-height: 20px;
+	}
+	
+	.img-info p {
+		font-size: 24px;
+		line.height: 24px;
+	}
+
+	#cat-img:hover {
+		transform: none;
+	}
+	
+	
+	
+	
+}
 
 
