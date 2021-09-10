@@ -1,57 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Willkommen :)</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css"/> 
 </head>
-<body style = "background-color: rgb(29, 31, 33);">
-
-<div id="space800">
-	<br>
-	<!-- menu -->
-	<center>
-		<a href="#aboutMe" id="menulink">&UumlBER MICH</a>
-		<a href="#projects" id="menulink">PROJEKTE</a>
-		<a href="https://olvrwn.github.io/support" 	id="menulink">SUPPORT</a>
-		<a href="https://olvrwn.github.io/privacy" id="menulink">DATENSCHUTZ</a>
-	</center>	
-
-	<br><br>	
+<body>
+	
+	
+	
+	<div class="menu">
+		<br>
+		<!-- menu -->
+		<center>
+			<a href="#aboutMe" id="menulink">&UumlBER MICH</a>
+			<a href="#projects" id="menulink">PROJEKTE</a>
+			<a href="#support" 	id="menulink">SUPPORT</a>
+			<a href="https://olvrwn.github.io/privacy" id="menulink">DATENSCHUTZ</a>
+		</center>	
+	</div>	
+	
+	
+	<div id="info-div" class="wrapper">
+		<div class="center">
+			<article class="info">
+				<center>
+					<h1>&lt;h1&gt;Hello World!&lt;/h1&gt;</h1>
+					<p>&lt;p&gt;Welcome to my page.&lt;/p&gt;</p>
+					<p>(work in progress)</p>
+				</center>
+			</article>
+		</div>
+	</div>
+	
 	
 	<center>
-		<h1><xmp><h1>Hello World!</h1></xmp></h1>
-		<p><xmp><p>Ich bin Oliver, 20 Jahre alt, Student an der Hochschule Merseburg.</p></xmp></p>
+		<div id="aboutMe" class="wrapper">
+			<h1>&Uumlber mich</h1>
+			<div class="seperator2" id="spaceDark"></div>
+			<img id="cat-img" src="https://thecatapi.com/api/images/get?format=src&type=gif" alt="random cat pic"> <!--cats > dogs, prove me wrong -->
+			<div class="seperator2" id="spaceDark"></div>
+			<article class="img-info">
+				<p>Hi, ich bin Oliver, 20, und studiere Angewandte Informatik an der Hochschule Merseburg.</p>
+			</article>
+		</div>
+		
+		
+		
+		<div class="seperator" id="aboutMe2projects"></div>
+		
+		
+		
+		<div id="projects" class="wrapper">
+			<h1>Projekte</h1>
+			<div class="seperator2" id="spaceDark"></div>
+			<a href="./projects/password_and_pin_generator.html">
+				<img class="img" id="img-project" src="./img/password-and-pin-generator.png">
+			</a>
+			<a href="./projects/coming_soon.html">
+				<img class="img" id="img-project" src="./img/question-block.png" alt="coming soon">
+			</a>
+			<!--
+			<img class="img" id="img-project" src="https://picsum.photos/200" alt="lorem picsum">
+			<img class="img" id="img-project" src="https://picsum.photos/200" alt="lorem picsum">
+				-->
+		</div>
+		
+		
+		<div class="seperator" id="projects2support"></div>
+
+		
+		
+		<div id="support" class="wrapper">
+			<div class="seperator2" id="spaceLight"></div>
+			<h1>Support</h1>
+			<div class="seperator2" id="spaceLight"></div>
+			<div id="contactme" class="container">
+			  <form action="https://formsubmit.co/8654a1f41161366d7006bf53380a7bc1" method="POST">
+
+			    <input type="text" id="name" name="name" placeholder="Name" required>
+
+			    <input type="text" id="email" name="email" placeholder="E-Mail-Adresse" required>
+
+			    <select id="subject" name="subject" required>
+				  <option value="default" selected="true" disabled="disabled">Thema ausw&aumlhlen &#8681;</option>
+			      <option value="first">Passwort und PIN Generator</option>
+			      <option value="other">sonstiges</option>
+			    </select>
+
+			    <textarea id="message" name="message" placeholder="Nachricht" style="height:200px" required></textarea>
+
+			    <input type="submit" value="Absenden" id="submit">
+
+			  </form>
+			</div>
+
+			<br><br><br>
+
+			<h2>oder:</h2>
+			<br>
+			<a href="mailto:olvsoftware@icloud.com" id="mailto"><img alt="Mail-Icon" src="./img/email-icon.png" id="email-icon"/></a>
+			<a href="https://www.instagram.com/olvsoftware" id="instagram"><img alt="Instagram-Icon" src="./img/instagram-icon.png" id="instagram-icon"/></a>  
+		</div>
 	</center>
-	<p>I'm hosted with GitHub Pages.</p>
-	<p>work in progress!</p>
-</div>
+	
+
+
+	
+	
+	
+	
+	
+	
+	<div class="seperator2" id="spaceLight"></div>
+	
+	
+	
+	
+	
 
 
 
-
-<div id="space800">
-	<div id="aboutMe">
-		<p>&Uumlber mich</p>
-	</div>
-</div>
-
-
-<div id="space800">
-	<div id="projects">
-		<p>Projekte</p>
-	</div>
-</div>
-
-
-<div id="space800">
-	<div id="support">
-		<p>Support</p>
-	</div>
-</div>
-
-
-
-
-
+	<center>
+		<div id="footer" class="wrapper">
+			<footer>
+				<br>
+				<a href="https://olvrwn.github.io/privacy" id="menulink">DATENSCHUTZ</a>
+				<br><br>
+			</footer>
+		</div>
+	</center>
 
 
 
