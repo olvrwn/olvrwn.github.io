@@ -24,7 +24,7 @@ input[type=text], input[type=submit], textarea {
   background: transparent;
   padding: 15px 15px; 
   line-height: 60px;
-  /*width: 90%;*/
+  width: 90%;
   color: #000;
   -webkit-box-sizing: content-box;
   font-size: xx-large;
@@ -33,7 +33,6 @@ input[type=text], input[type=submit], textarea {
 
 input[type=text]:focus, textarea:focus, select {
 	outline: 0px solid black;
-	/*color: white;*/
 }
 
 #contactme
@@ -141,6 +140,12 @@ img {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+
+
+#test {
+	width: 100%;
 }
 
 
