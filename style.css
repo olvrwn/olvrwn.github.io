@@ -24,7 +24,7 @@ input[type=text], input[type=submit], textarea {
   background: transparent;
   padding: 15px 15px; 
   line-height: 60px;
-  width: 90%;
+  /*width: 90%;*/
   color: #000;
   -webkit-box-sizing: content-box;
   font-size: xx-large;
@@ -243,7 +243,7 @@ img {
 		display: none;
 	}
 	
-	#projects {
+	#projects { /* I think this can be removed */
 		clear: right;
 		clear: left;
 	}
