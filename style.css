@@ -34,14 +34,15 @@ input[type=text], input[type=submit], textarea {
 input[type=text]:focus, textarea:focus, select {
 	outline: 0px solid black;
 }
-/*
+
 #contactme
 {
-    height:100%;
+	width: 100%;
+    height: 100%;
     flex: 1 1 auto;
     margin:0 auto;
     display:block;
-}*/
+}
 
 #contactme input{
     display:block;
