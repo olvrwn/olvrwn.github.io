@@ -50,7 +50,7 @@ input[type=text]:focus, textarea:focus, select {
 
 form {
 	margin: 0 auto; 
-	width:750px;
+	width: 95%;
 }
 
 select {
@@ -255,6 +255,10 @@ img {
 	#support {
 		clear: right;
 		clear: left;
+	}
+	
+	form {
+		width: 50%;
 	}
 	
 	img:hover {
