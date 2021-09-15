@@ -26,7 +26,7 @@ input[type=text], input[type=submit], textarea {
   line-height: 60px;
   width: 90%;
   color: #000;
-  font-size: xx-large;
+  font-size: large;
   font-weight: 1;
   -ms-box-sizing:content-box;
   -moz-box-sizing:content-box;
@@ -62,7 +62,7 @@ select {
 	border-radius: 10px;
     background-color: transparent;
 	width: 90%;
-    font-size: xx-large;
+    font-size: large;
     font-weight: 1;
 	padding: 15px 15px; 
 	color: black;
