@@ -230,6 +230,7 @@ img {
 
 
 
+
 /* it is only noted when display size at least 768px */
 @media only screen and (min-width: 1000px) {
 	/* show menu bar at the top*/
@@ -303,7 +304,6 @@ img {
 	#me-img:hover, #cat-img:hover {
 		transform: none;
 	}
-	
 	
 	
 	
