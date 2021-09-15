@@ -26,9 +26,12 @@ input[type=text], input[type=submit], textarea {
   line-height: 60px;
   width: 90%;
   color: #000;
-  -webkit-box-sizing: content-box;
   font-size: xx-large;
   font-weight: 1;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
 }
 
 input[type=text]:focus, textarea:focus, select {
@@ -58,12 +61,16 @@ select {
     border: 1px solid black;
 	border-radius: 10px;
     background-color: transparent;
-	width: 94%;
+	width: 90%;
     font-size: xx-large;
     font-weight: 1;
 	padding: 15px 15px; 
 	color: black;
 	line-height: 60px;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
 }
 
 #submit:hover {
@@ -272,12 +279,10 @@ img {
 	
 	input[type=text], input[type=submit], textarea {
 	  line-height: 20px;
-	  width: 96%;
 	  font-size: x-large;
 	}
 	
 	select {
-		width: 100%;
 	    font-size: x-large;
 		line-height: 20px;
 	}
