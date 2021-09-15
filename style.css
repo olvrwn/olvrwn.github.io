@@ -86,12 +86,16 @@ select {
 #email-icon {
 	width: 76.8px;
 	height: 55.8px;
-	padding: 2%;
 }
+
 #instagram-icon {
 	width: 58px;
 	height: 58px;
+}
+
+#instagram-icon, #email-icon {
 	padding: 2%;
+	margin: 29px;
 }
 
 #mailto:link, #mailto:visited, #instagram:link, #instagram:visited{
