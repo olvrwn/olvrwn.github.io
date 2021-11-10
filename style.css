@@ -92,12 +92,12 @@ select {
 	height: 55.8px;
 }
 
-#instagram-icon {
+#instagram-icon, #apple-music-icon {
 	width: 58px;
 	height: 58px;
 }
 
-#instagram-icon, #email-icon {
+#instagram-icon, #email-icon, #apple-music-icon{
 	padding: 2%;
 	margin: 29px;
 }
@@ -139,7 +139,7 @@ img {
   border-radius: 25%;
 }
 
-#footer {
+#footer, #legal-footer {
 	background-color: black;
 }
 
@@ -214,7 +214,7 @@ img {
 	background-color: rgb(29, 31, 33);
 }
 
-#donate2support {
+#donate2getInTouch {
 	background-color: rgb(29, 31, 33);
 }
 
