@@ -92,12 +92,17 @@ select {
 	height: 55.8px;
 }
 
+#linkedin-icon {
+	width: 63.5px;
+	height: 54px;
+}
+
 #instagram-icon, #apple-music-icon {
 	width: 58px;
 	height: 58px;
 }
 
-#instagram-icon, #email-icon, #apple-music-icon{
+#instagram-icon, #email-icon, #apple-music-icon, #linkedin-icon{
 	padding: 2%;
 	margin: 29px;
 }
