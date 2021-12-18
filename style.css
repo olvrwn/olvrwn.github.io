@@ -18,6 +18,12 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#legal-p {
+	color: white;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 input[type=text], input[type=submit], textarea {
   border-radius: 10px;
   border: 1px solid black;
@@ -198,6 +204,12 @@ img {
 	padding: 2%;
 }
 
+.img-project-detailed-icon, .img-project-detailed-icon:hover {
+	width: 25%;
+	padding: 2%;
+	transform: none;
+}
+
 #support {
 	background-color: #777;
 }
@@ -310,7 +322,7 @@ img {
 		line.height: 24px;
 	}
 
-	#me-img:hover, #cat-img:hover {
+	#me-img:hover, #cat-img:hover, #img-appstore-badge:hover {
 		transform: none;
 	}
 	
