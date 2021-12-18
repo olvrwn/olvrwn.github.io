@@ -89,7 +89,7 @@ select {
 	color: #000;
 }
 
-#me-img {
+#me-img, #img-project-detailed-icon-password_and_pin_generator, #img-appstore-badge {
 	width: 40%;
 }
 
