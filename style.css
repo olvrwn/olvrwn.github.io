@@ -118,9 +118,9 @@ select {
 	text-decoration: none;
 }
 
-#mailto:hover, #mailto:active, #instagram:hover, #instagram:active {
+#mailto:hover, #mailto:active, #instagram:hover, #instagram:active, #linkedin:hover, #linkedin:active, #apple-music:hover, #apple-music:active {
 	color: black;
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 	text-decoration: none;
 }
 
@@ -169,7 +169,9 @@ img {
   transform: translate(-50%, -50%);
 }
 
-
+.90percent {
+	width: 90%;
+}
 
 
 
@@ -191,7 +193,7 @@ img {
 	display: none;
 }
 
-.img-info p {
+#img-info p, #donate-text p {
 	padding: 20px 30px 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
@@ -223,24 +225,12 @@ img {
 	height: 8vh;
 }
 
-#aboutMe2projects {
-	background-color: rgb(29, 31, 33);
-}
-
-#projects2donate {
-	background-color: rgb(29, 31, 33);
-}
-
-#donate2getInTouch {
+#aboutMe2projects, #projects2donate, #donate2getInTouch, #spaceDark {
 	background-color: rgb(29, 31, 33);
 }
 
 #support2footer {
 	background-color: #777;
-}
-
-#spaceDark {
-	background-color: rgb(29, 31, 33);
 }
 
 #spaceLight {
@@ -264,13 +254,18 @@ img {
 		margin: 0 auto;
 	}
 	
-	.img-info {
+	#img-info, #donate-text {
 		width: 75%;
-		/*float: right;*/
 	}
 	
-	.img-info p {
+	#donate-text {
+		float: right;
+	}
+	
+	#img-info p, #donate-text p {
 		padding: 20px 0px 0px 40px;
+		font-size: 24px;
+		line.height: 24px;
 	}
 	
 	.img {
@@ -315,11 +310,6 @@ img {
 	select {
 	    font-size: x-large;
 		line-height: 20px;
-	}
-	
-	.img-info p {
-		font-size: 24px;
-		line.height: 24px;
 	}
 
 	#img-appstore-badge {
