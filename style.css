@@ -237,6 +237,10 @@ img {
 	background-color: #777;
 }
 
+#buyMeACoffee {
+	border-radius: 0;
+}
+
 
 
 
@@ -316,7 +320,7 @@ img {
 		width: 20%;
 	}
 
-	#me-img:hover, #cat-img:hover, #img-appstore-badge:hover {
+	#me-img:hover, #cat-img:hover, #img-appstore-badge:hover, #buyMeACoffee:hover {
 		transform: none;
 	}
 	
