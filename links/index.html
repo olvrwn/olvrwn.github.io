@@ -32,7 +32,7 @@ body {
   width: 80%;
 }
 
-.w3-theme-l1:hover {         /* button hover color */
+.w3-theme-l1:hover {         /* button hover */
   opacity: 25%;
 }
 
@@ -73,7 +73,7 @@ body {
 .button {
 	border: 2px solid #fff;
 	border-radius: 15px;
-	border-color: #000000;
+	border-color: #000;
 	text-align: center;
 	line-height: 40px;
 	text-decoration: none;
@@ -93,6 +93,17 @@ h4 {      						 /* headlines / titles */
 .cryptoAddress {
 	color: rgb(89, 91, 93);
 }
+
+.cryptoButton {
+	border: 2px solid #fff;
+	border-radius: 15px;
+	border-color: #000;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	background-color: rgb(29, 31, 33); 
+	color: #eee;
+} 
 
 @media (min-width: 768px) {
   .link {
@@ -216,14 +227,13 @@ h4 {      						 /* headlines / titles */
 
 					<!-- Crypto Currencies-->
 					<!-- BTC -->
-					<p class="cryptoAddress" id="BTCAddress">Bitcoin: bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0</p>
-					<button class="button" onclick="copyBTCAddress()">Bitcoin: bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0</button>
+					<button class="cryptoButton" onclick="copyBTCAddress()">Bitcoin: bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0</button>
+					<p></p>
 					<!-- ETH -->
-					<p class="cryptoAddress" id="ETHAddress">Ethereum: 0xa4F4cF78eEF7adc7E75f7500f614Ed0501a48De6</p>
-					<button class="button" onclick="copyETHAddress()">Copy Address</button>
+					<button class="cryptoButton" onclick="copyETHAddress()">Ethereum: 0xa4F4cF78eEF7adc7E75f7500f614Ed0501a48De6</button>
+					<p></p>
 					<!-- SOL -->
-					<p class="cryptoAddress" id="SOLAddress">Solana: 6tGKU6hCTTEU72i6uAhSVNJgrYUdt5JRMFrxekyP1gL9</p>
-					<button class="button" onclick="copySOLAddress()">Copy Address</button>
+					<button class="cryptoButton" onclick="copySOLAddress()">Solana: 6tGKU6hCTTEU72i6uAhSVNJgrYUdt5JRMFrxekyP1gL9</button>
 		  	  </center>
 	  	</div>
       </div>
