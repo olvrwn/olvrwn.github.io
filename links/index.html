@@ -90,18 +90,29 @@ h4 {      						 /* headlines / titles */
 	color: black;
 }
 
+.cryptoAddress {
+	color: rgb(89, 91, 93);
+}
+
 @media (min-width: 768px) {
   .link {
     width: 100%;
   }
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
 </style>
-  </head>
+
+
+
+
+
+
+</head>
   <body>
     <!-- Content container -->
     <div class="container">
@@ -194,23 +205,32 @@ h4 {      						 /* headlines / titles */
 				<!-- Buy me a coffe button -->
 			  	<a href="https://www.buymeacoffee.com/olvrwn" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" id="buyMeACoffee" style="height: 60px !important;width: 217px !important;" ></a>
 				</br></br>
+				
 					<!-- PayPal button -->
 					<form action="https://www.paypal.com/donate" method="post" target="_top">
 						<input type="hidden" name="hosted_button_id" value="LTR2BMJBKZMWC" />
 						<input type="image" src="https://pics.paypal.com/00/s/ZWY1NDZkNTAtOWJlOS00ZGFhLWIwOWItMTAwMGQ3MDY2MDRi/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 						<img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
 					</form>
-					<!-- Crypto -->
+				</br></br>
+
+					<!-- Crypto Currencies-->
 					<!-- BTC -->
+					<p class="cryptoAddress" id="BTCAddress">Bitcoin: bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0</p>
+					<button class="button" onclick="copyBTCAddress()">Bitcoin: bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0</button>
 					<!-- ETH -->
+					<p class="cryptoAddress" id="ETHAddress">Ethereum: 0xa4F4cF78eEF7adc7E75f7500f614Ed0501a48De6</p>
+					<button class="button" onclick="copyETHAddress()">Copy Address</button>
 					<!-- SOL -->
+					<p class="cryptoAddress" id="SOLAddress">Solana: 6tGKU6hCTTEU72i6uAhSVNJgrYUdt5JRMFrxekyP1gL9</p>
+					<button class="button" onclick="copySOLAddress()">Copy Address</button>
 		  	  </center>
 	  	</div>
       </div>
 	  
 	  </br></br></br>
 
-      <!-- Bottom section 3 -->
+      <!-- Bottom section -->
       <div class="bottom margin-top-2 w3-padding w3-round">
         <span style="vertical-align: 7px;"> 2022 - Oliver Dieke</span>
       </div>
@@ -222,3 +242,32 @@ h4 {      						 /* headlines / titles */
   </body>  
 </html>
 
+
+
+
+
+
+
+
+<Script>
+function copyBTCAddress() {
+  //copy
+  navigator.clipboard.writeText("bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0");
+  //alert that copied
+  alert("BTC address copied!");
+}
+
+function copyETHAddress() {
+  //copy
+  navigator.clipboard.writeText("0xa4F4cF78eEF7adc7E75f7500f614Ed0501a48De6");
+  //alert that copied
+  alert("ETH address copied!");
+}
+
+function copySOLAddress() {
+  //copy
+  navigator.clipboard.writeText("6tGKU6hCTTEU72i6uAhSVNJgrYUdt5JRMFrxekyP1gL9");
+  //alert that copied
+  alert("SOL address copied!");
+}
+</Script>
