@@ -14,6 +14,10 @@ body {
   background: rgb(29, 31, 33); 
 }
 
+p {
+	font-family: "Space Mono", monospace;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -115,6 +119,34 @@ h4 {      						 /* headlines / titles */
     max-width: 540px;
   }
 }
+
+
+
+
+
+
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-row-gap: 25px;
+}
+
+.image-grid img {
+  width: 50%;
+  height: auto;
+}
+
+a img {
+  transition: transform 0.2s;
+}
+
+a:hover img {
+  transform: scale(1.1);
+}
+
+
 </style>
 
 
@@ -130,14 +162,26 @@ h4 {      						 /* headlines / titles */
       <!-- Image and name container -->
       <div style="text-align: center">
         <img src="../img/me.jpg" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
-        <p><span class="name w3-padding w3-red w3-round" style="font-weight: bolder;">Hi, I'm Oliver!</span></p>
+        <p class="name w3-padding w3-red w3-round" style="font-weight: bolder;" data-value="Hi, I'm Oliver!">Hi, I'm Oliver!</p>
 		<!-- <p>I am studying applied computer sciences at University of Applied Sciences Merseburg and working as an iOS Software Developer for Appsfactory.</p> -->
       </div>
 	  
+ 	  </br>
+	  
+	  <!-- links section 1 -->
+	  <div class="image-grid">
+	    <a href="https://www.instagram.com/olvrwn/" target="_blank"><img src="../img/socials/instagram-black-icon.png" alt="Instagram icon"></a>
+	    <a href="https://twitter.com/olvrwn" target="_blank"><img src="../img/socials/twitter-black-icon.png" alt="Twitter icon"></a>
+	    <a href="https://www.linkedin.com/in/olvrwn" target="_blank"><img src="../img/socials/linkedin-black-icon.png" alt="LinkedIn icon"></a>
+		<a href="https://music.apple.com/profile/olvrwn" target="_blank"><img src="../img/socials/apple-music-black-icon.png" alt="Apple Music icon"></a>
+		<a href="https://github.com/olvrwn" target="_blank"><img src="../img/socials/github-black-icon.png" alt="GitHub icon"></a>
+		<a href="mailto:olvsoftware@icloud.com" target="_blank"><img src="../img/socials/email-icon.png" alt="e-mail icon"></a>
+		<!-- <a href="LINK" target="_blank"><img src="../img/ICON.png" alt="xxx icon"></a> -->
+	  </div>
+	  
   </br></br></br>
 
-      <!-- links section 1 -->
-      <h4 class="margin-top-2">SOCIALS</h4>
+      <!-- <h4 class="margin-top-2">SOCIALS</h4>
       <div class="links-container">
         <a href="https://www.instagram.com/olvrwn/" class="button" target="_blank">Instagram</a>
 		<br>
@@ -152,14 +196,14 @@ h4 {      						 /* headlines / titles */
         <a href="mailto:olvsoftware@icloud.com" class="button" target="_blank">Mail Me</a>
         <br>
         <a href="https://olvrwn.github.io" class="button" target="_blank">My Website (work in progress)</a>
-      </div>
+      </div> 
 	  
-	  </br></br></br>
+  	  </br></br></br> -->
 
       <!-- links section 2 -->
       <h4 class="margin-top-2">PROJECTS</h4>
 	  <center>
-      	<div class="links-container">
+      	<div class="img-block">
 		 	<div class="img-block">
 		 	 <a href="https://apps.apple.com/de/app/passwort-pin-generator/id1583648767" target="_blank">
 				   <img class="project-icon" id="papg-icon" src="../img/password-and-pin-generator.png" alt="Password and PIN Generator" style="padding: 1%;">
@@ -217,9 +261,6 @@ h4 {      						 /* headlines / titles */
       </div>
 
     </div>
-    <script>
-      feather.replace()
-    </script>
   </body>  
 </html>
 
@@ -232,23 +273,59 @@ h4 {      						 /* headlines / titles */
 
 <Script>
 function copyBTCAddress() {
-  //copy
+  // copy
   navigator.clipboard.writeText("bc1qnskn2xja2n9jrd8uw4paj8uvrhf70aqjvpa5d0");
-  //alert that copied
+  // alert that copied
   alert("BTC address copied!");
 }
 
 function copyETHAddress() {
-  //copy
+  // copy
   navigator.clipboard.writeText("0xa4F4cF78eEF7adc7E75f7500f614Ed0501a48De6");
-  //alert that copied
+  // alert that copied
   alert("ETH address copied!");
 }
 
 function copySOLAddress() {
-  //copy
+  // copy
   navigator.clipboard.writeText("6tGKU6hCTTEU72i6uAhSVNJgrYUdt5JRMFrxekyP1gL9");
-  //alert that copied
+  // alert that copied
   alert("SOL address copied!");
+}
+
+
+
+
+
+
+
+// "hacker" effect
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.querySelector("p").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
 }
 </Script>
