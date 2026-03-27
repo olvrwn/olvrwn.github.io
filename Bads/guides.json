@@ -1,14 +1,38 @@
 [
 	{
 		"id": "0",
-  		"title": "Building Better Sleep Habits",
-  		"description": "A comprehensive guide to developing healthy sleep patterns and improving sleep quality through evidence-based practices.",
+  		"title": "Marijuana (Cannabis, Weed): What It Is, Side Effects & Risks",
+  		"description": "Marijuana is a mind-alerting substance that comes from the Cannabis sativa plant. It has several short-term and long-term effects, many of which scientists are still studying.",
   		"language": "en",
-  		"estimatedReadingMinutes": 8,
- 		"source": "Sleep Foundation",
-  		"url": "https://www.sleepfoundation.org/sleep-hygiene",
-  		"author": "Dr. Sarah Mitchell",
-  		"habits": null,
-  		"tags": ["sleep", "wellness", "health", "routine"]
+  		"estimatedReadingMinutes": 10,
+ 		"source": "Cleveland Clinic",
+  		"url": "https://my.clevelandclinic.org/health/articles/4392-marijuana-cannabis",
+  		"author": null,
+  		"habits": ["weed"],
+  		"tags": ["overview", "risks", "effects", "addiction"]
+	},
+	{
+		"id": "1",
+  		"title": "Cannabis, cannabinoids and health: a review of evidence on risks and medical benefits",
+  		"description": "The legalization of cannabis for medical and recreational purposes has progressed internationally. Cannabis and cannabinoids are advocated for a plethora of medical indications. An increasing number of medical and nonmedical users regularly consume large doses of delta-9-Tetrahydrocannabinol (THC), the main active component of cannabis.",
+  		"language": "en",
+  		"estimatedReadingMinutes": 35,
+ 		"source": "Springer",
+  		"url": "https://link.springer.com/article/10.1007/s00406-024-01880-2",
+  		"author": "Hoch, E., Volkow, N.D., Friemel, C.M. et al.",
+  		"habits": ["weed"],
+  		"tags": ["overview", "risks", "medical"]
+	},
+	{
+		"id": "2",
+  		"title": "World Drug Report 2025",
+  		"description": "A global reference on drug markets, trends and policy developments, the World Drug Report offers a wealth of data and analysis and in 2025 comprises several elements tailored to different audiences.",
+  		"language": "en",
+  		"estimatedReadingMinutes": null,
+ 		"source": "United Nations",
+  		"url": "https://www.unodc.org/unodc/data-and-analysis/world-drug-report-2025.html",
+  		"author": null,
+  		"habits": ["weed", "cocaine", "ectasy", "opioids", "amphetamines"],
+  		"tags": ["overview", "global", "trends"]
 	}
 ]
