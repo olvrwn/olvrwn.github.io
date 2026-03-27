@@ -32,7 +32,7 @@
  		"source": "United Nations",
   		"url": "https://www.unodc.org/unodc/data-and-analysis/world-drug-report-2025.html",
   		"author": null,
-  		"habits": ["Weed", "Cocaine", "Ectasy", "Opioids", "Amphetamines"],
+  		"habits": ["Weed", "Cocaine", "Ecstasy", "Opioids", "Amphetamines"],
   		"tags": ["overview", "global", "trends"]
 	}
 ]
