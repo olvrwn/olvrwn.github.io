@@ -8,7 +8,7 @@
  		"source": "Cleveland Clinic",
   		"url": "https://my.clevelandclinic.org/health/articles/4392-marijuana-cannabis",
   		"author": null,
-  		"habits": ["weed"],
+  		"habits": ["Weed"],
   		"tags": ["overview", "risks", "effects", "addiction"]
 	},
 	{
@@ -20,7 +20,7 @@
  		"source": "Springer",
   		"url": "https://link.springer.com/article/10.1007/s00406-024-01880-2",
   		"author": "Hoch, E., Volkow, N.D., Friemel, C.M. et al.",
-  		"habits": ["weed"],
+  		"habits": ["Weed"],
   		"tags": ["overview", "risks", "medical"]
 	},
 	{
@@ -32,7 +32,7 @@
  		"source": "United Nations",
   		"url": "https://www.unodc.org/unodc/data-and-analysis/world-drug-report-2025.html",
   		"author": null,
-  		"habits": ["weed", "cocaine", "ectasy", "opioids", "amphetamines"],
+  		"habits": ["Weed", "Cocaine", "Ectasy", "Opioids", "Amphetamines"],
   		"tags": ["overview", "global", "trends"]
 	}
 ]
